@@ -8,7 +8,9 @@
  * @author USUARIO
  */
 public class CalculadoraInterfaz extends javax.swing.JFrame {
-
+String numero1;
+String signo;
+String numero2;
     /**
      * Creates new form CalculadoraInterfaz
      */
@@ -25,8 +27,9 @@ public class CalculadoraInterfaz extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        pantalla = new javax.swing.JTextArea();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -46,47 +49,168 @@ public class CalculadoraInterfaz extends javax.swing.JFrame {
         jButton19 = new javax.swing.JButton();
         jButton20 = new javax.swing.JButton();
 
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(0, 102, 0));
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        pantalla.setBackground(new java.awt.Color(204, 204, 204));
+        pantalla.setColumns(20);
+        pantalla.setRows(5);
+        jScrollPane1.setViewportView(pantalla);
 
+        jButton1.setBackground(new java.awt.Color(153, 153, 255));
         jButton1.setText("1");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
+        jButton2.setBackground(new java.awt.Color(153, 153, 255));
         jButton2.setText("4");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
+        jButton3.setBackground(new java.awt.Color(153, 153, 255));
         jButton3.setText("2");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
+        jButton4.setBackground(new java.awt.Color(153, 153, 255));
         jButton4.setText(".");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
+        jButton5.setBackground(new java.awt.Color(153, 153, 255));
         jButton5.setText("0");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
+        jButton6.setBackground(new java.awt.Color(153, 153, 255));
         jButton6.setText("8");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
+        jButton7.setBackground(new java.awt.Color(153, 153, 255));
         jButton7.setText("5");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
+        jButton8.setBackground(new java.awt.Color(153, 153, 255));
         jButton8.setText("7");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
 
+        jButton9.setBackground(new java.awt.Color(153, 153, 255));
         jButton9.setText("6");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
 
+        jButton10.setBackground(new java.awt.Color(153, 153, 255));
         jButton10.setText("/");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
 
+        jButton11.setBackground(new java.awt.Color(153, 153, 255));
         jButton11.setText("=");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
 
+        jButton12.setBackground(new java.awt.Color(153, 153, 255));
         jButton12.setText("+");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
 
+        jButton13.setBackground(new java.awt.Color(153, 153, 255));
         jButton13.setText("-");
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
 
+        jButton14.setBackground(new java.awt.Color(153, 153, 255));
         jButton14.setText("*");
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
 
+        jButton15.setBackground(new java.awt.Color(153, 153, 255));
         jButton15.setText("9");
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
 
+        jButton16.setBackground(new java.awt.Color(153, 153, 255));
         jButton16.setText("3");
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
 
+        jButton19.setBackground(new java.awt.Color(204, 255, 255));
         jButton19.setText("C");
+        jButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton19ActionPerformed(evt);
+            }
+        });
 
+        jButton20.setBackground(new java.awt.Color(204, 255, 255));
         jButton20.setText("CE");
+        jButton20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton20ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -193,9 +317,153 @@ public class CalculadoraInterfaz extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+pantalla.setText(pantalla.getText()+ "1");        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+pantalla.setText(pantalla.getText()+ "2");               // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+pantalla.setText(pantalla.getText()+ "3");               // TODO add your handling code here:
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+pantalla.setText(pantalla.getText()+ "4");               // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+pantalla.setText(pantalla.getText()+ "5");               // TODO add your handling code here:
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+pantalla.setText(pantalla.getText()+ "6");               // TODO add your handling code here:
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+pantalla.setText(pantalla.getText()+ "7");               // TODO add your handling code here:
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+pantalla.setText(pantalla.getText()+ "8");               // TODO add your handling code here:
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+pantalla.setText(pantalla.getText()+ "9");               // TODO add your handling code here:
+    }//GEN-LAST:event_jButton15ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+pantalla.setText(pantalla.getText()+ "0");               // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+String cadena;
+cadena= pantalla.getText();
+if (cadena.length()<=0){
+    pantalla.setText("0.");
+}
+else{
+    if(!ExistePunto(pantalla.getText())){
+        pantalla.setText(pantalla.getText()+".");
+    }
+}
+
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+String cadena;
+cadena = pantalla.getText();
+if (cadena.length()>0){
+    cadena=cadena.substring(0, cadena.length()-1);
+    pantalla.setText(cadena);
+}
+    }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+pantalla.setText("");        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton20ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+if (!pantalla.getText().equals("")){
+    numero1=pantalla.getText();
+    signo = "/";
+    pantalla.setText("");
+}
+
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+if (!pantalla.getText().equals("")){
+    numero1=pantalla.getText();
+    signo = "*";
+    pantalla.setText("");
+}        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+if (!pantalla.getText().equals("")){
+    numero1=pantalla.getText();
+    signo = "-";
+    pantalla.setText("");
+}        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+if (!pantalla.getText().equals("")){
+    numero1=pantalla.getText();
+    signo = "+";
+    pantalla.setText("");
+}        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+String total;
+numero2=pantalla.getText();
+
+if(!numero2.equals("")){
+    total=operacion(numero1, numero2, signo);
+    pantalla.setText(total);
+}
+
+// TODO add your handling code here:
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    public static boolean ExistePunto(String cadena){
+        boolean resultado;
+        resultado= false;
+        
+        for(int i=0; i< cadena.length(); i++){
+            if(cadena.substring(i, i+1).equals(".")){
+            resultado =true;
+            break;
+        }
+        }
+        return resultado;
+    }
+    public static String operacion(String numero1, String numero2, String signo){
+        Double total=0.0;
+        String resultado;
+        
+        if( signo.equals("/")){
+            total=Double.parseDouble(numero1)/Double.parseDouble(numero2);
+        }
+           if( signo.equals("*")){
+            total=Double.parseDouble(numero1)*Double.parseDouble(numero2);
+        }
+              if( signo.equals("+")){
+            total=Double.parseDouble(numero1)+Double.parseDouble(numero2);
+        }
+                 if( signo.equals("-")){
+            total=Double.parseDouble(numero1)-Double.parseDouble(numero2);
+        }
+          resultado=total.toString();
+          return resultado;
+          
+    }
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -247,7 +515,8 @@ public class CalculadoraInterfaz extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea pantalla;
     // End of variables declaration//GEN-END:variables
 }
