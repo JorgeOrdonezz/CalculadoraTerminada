@@ -196,7 +196,7 @@ String numero2;
             }
         });
 
-        jButton19.setBackground(new java.awt.Color(204, 255, 255));
+        jButton19.setBackground(new java.awt.Color(102, 153, 255));
         jButton19.setText("C");
         jButton19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -204,7 +204,7 @@ String numero2;
             }
         });
 
-        jButton20.setBackground(new java.awt.Color(204, 255, 255));
+        jButton20.setBackground(new java.awt.Color(102, 153, 255));
         jButton20.setText("CE");
         jButton20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
